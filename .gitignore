@@ -1,0 +1,14 @@
+cat << EOT > .gitignore
+# Binaries and executables
+riscv_sim
+riscv_hardware_core
+
+# Build artifacts
+build/
+*.o
+*.out
+*.vcd
+
+# OS generated files
+.DS_Store
+EOT
