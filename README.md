@@ -96,6 +96,8 @@ RESULT: SUCCESS! RTL hardware outputs match C++ Golden Reference Engine.
     ├── forwarding_unit.v <-- EX/MEM & MEM/WB Data Hazard Bypass
     ├── riscv_core.v      <-- Integrated 5-Stage Top-Level Structural Core
     └── riscv_core_tb.v   <-- Environment Verification Testbench
-🛠 Building and Compiling the FrameworkExecuting the C++ Cycle-Accurate Simulator:Bashmake clean && make && ./riscv_sim
+
+## Building and Compiling the Framework
+Executing the C++ Cycle-Accurate Simulator:Bashmake clean && make && ./riscv_sim
 Executing the Verilog RTL Hardware Core (via Icarus Verilog):Bashiverilog -o riscv_hardware_core -I rtl rtl/reg_file.v rtl/alu.v rtl/forwarding_unit.v rtl/riscv_core.v rtl/riscv_core_tb.v
 vvp riscv_hardware_core
